@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+ <meta charset="UTF-8">
+ <meta name="vievport" content="width=device-width, inital-scale=1/0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title> Генератор файлов</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <style>
+   body {background-color: #708090;}
+   h1 {color: white; font-size: 2em}
+   p {color: #000000; font-size: 1.1em}
+   </style>
+</head>
+<body>
+<h1>       Генератор файлов v 0.000000001 pre alpha edition </h1>
+<p></p>
+<form method="post" action="/face">
+  <div class="form-group">
+    <label for="exampleInputFileSize">  Размер файла</label>
+    <input type="FileSize" name="Size" class="form-control" id="exampleInputFileSize" aria-describedby="fileHelp" placeholder="Укажите размер файла">
+    <small id="FileHelp" class="form-text text-muted">  Необходимо указать размер файла в байтах.</small>
+    <div class="form-group col-md-4">
+        <label for="inputFormat">Формат</label>
+        <select name="Type" id="inputFormat" class="form-control">
+          <option selected>Выбрать...</option>
+          <option>.pdf</option>
+          <option>.zip</option>
+          <option>.sig</option>
+          <option>.jpeg</option>
+          <option>.jpg</option>
+          <option>.doc</option>
+          <option>.docx</option>
+          <option>.rtf</option>
+          <option>.xls</option>
+          <option>.xlsx</option>
+          <option>.rar</option>
+          <option>.bmp</option>
+          <option>.tif</option>
+          <option>.tiff</option>
+          <option>.jpe</option>
+          <option>.gif</option>
+          <option>.dot</option>
+          <option>.odt</option>
+          <option>.txt</option>
+          <option>.xlw</option>
+          <option>.xla</option>
+          <option>.xlc</option>
+          <option>.xlt</option>
+          <option>.dgn</option>
+          <option>.dwg</option>
+        </select>
+      </div>
+  <button type="submit" class="btn btn-primary">Сгненерировать файл</button>
+</form>
+</body>
+</html>
